@@ -51,7 +51,7 @@ class Student():
     
     @cohort.setter
     def cohort(self, cohort_number):
-        if type(cohort) is int:
+        if type(cohort_number) is int:
             self.__cohort = cohort_number
         else:
             raise TypeError('cohort must be an integer')
@@ -65,7 +65,7 @@ class Student():
     
     def __str__(self):
         return f"{self.full_name} is {self.age} years old and is in Cohort {self.cohort}"
-
+ 
 
 mike = Student()
 mike.first_name = "Mike"
